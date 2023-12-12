@@ -291,7 +291,13 @@ export default function Layout() {
         <Divider />
         <List>
           {['Payments',"History"].map((text, index) => (
-            <ListItem key={text} disablePadding>
+            <ListItem key={text} disablePadding onClick={()=>{
+              if(index === 0){
+              navigate('/payment')
+              } else if(index === 1){
+                navigate('/history')
+              }
+            }}>
               <ListItemButton>
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

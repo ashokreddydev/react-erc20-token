@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import NotFound from './Pages/NotFound';
 import Payment from './Pages/Payment';
+import History from './Pages/History';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 // date-fns
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                     <Route element={<Layout />} >
                         <Route path="/home" element={<Home />} />
                         <Route path="/payment" element={<Payment />} />
+                        <Route path="/history" element={<History />} />
                     </Route>
                     <Route path="*" element={<NotFound />} />
                 </Routes>

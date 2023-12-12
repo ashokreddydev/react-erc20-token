@@ -12,7 +12,7 @@ export default function DateAndTime({value, setValue}:any) {
 
   return (
     <DemoContainer components={['DateTimePicker']}>
-      <DateTimePicker value={value} onChange={handleChange} label="Date and Time" slotProps={{ textField: { size: 'small' } }} />
+      <DateTimePicker disabled value={value} onChange={handleChange} label="Date and Time" slotProps={{ textField: { size: 'small' } }} />
     </DemoContainer>
   );
 }
